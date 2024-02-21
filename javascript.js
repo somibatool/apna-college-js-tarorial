@@ -149,10 +149,90 @@
 // }
 // console.log("your grade is " , grade)
 // chapter 3 (loops and string) for loop
-for(let i=1; i<=10; i++){
-    // console.log("somi batool... I am front end developer ");
-    document.getElementsByName(i);
+// for(let i=1; i<=10; i++){
+//     console.log("somi batool... I am front end developer ");
+   
+// }
+// calculate sum of 1 to 5;l
+// let sum = 0;
+// for(let i=1; i<=5; i++){
+//     sum=sum+i;
+// }
+// console.log("sum of i=" ,sum);
+// console.log("loop has been ended")
+// while loop
+//    let i=1;
+// while(i<=5){
+//     console.log("value of i is =", i)
+//     i++;
+// }
+// do while loop
+// let i = 1;
+// do{
+//     console.log("i =", i)
+//     i++;
+// }
+// while(i<=10);
+// print all the even numbers
+// let num;
+// for(num=1; num<=100; num++){
+//     console.log(num)
+// }
+// let i;
+// for(i=1; i%2==0; i++){
+//     console.log(i," this num is even")
+
+// }
+// let num=5;
+// if(num%2==0){
+//     console.log(num ,"is even")
+
+// }else {
+//     console.log(num ,"is odd")
+
+// }
+// for(let num=0;num<=100; num++){
+//     // console.log("num =" , num);
+//     if(num%2==0){
+//         console.log("num =" ,num);
+//     }
+
+// }
+// lets making a game
+// let gamenum=10;
+// let usernum= prompt("guess the number");
+// while(usernum != gamenum){
+//  usernum= prompt("you entred wrong number'guess the number again");
+
+// }
+// console.log("congratulation you entred right  number")
+// stringss
+// let str="somi";
+// let str2="alibaba";
+// practice question
+// let fullname= prompt("Entre your fullName");
+// let username="@"+fullname + fullname.length;
+// console.log(username);
+// Array
+// console.log(marks)
+// let marks = [20, 10, 30, 40,50 ,40, 50,70];
+// for(let indx=0; indx < marks.length; indx++){
+//     console.log(marks[indx]);
+// }
+let marks=[85 ,97, 44, 37,76 , 60];
+let sum =0;
+for(let val  of marks){
+    sum =sum +val;
+   
 }
+console.log(sum)
+let avg = sum/marks.length;
+console.log(avg);
+
+
+
+
+
 
 
 
