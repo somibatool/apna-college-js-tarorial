@@ -103,21 +103,56 @@
 //     console.log("they can't vote")
 
 // }
-let mode = "pink";
-let color;
-if(mode=="dark"){
-    color = "black";
-} else if(mode=="pink"){
-    color="pink";
+// let mode = "pink";
+// let color;
+// if(mode=="dark"){
+//     color = "black";
+// } else if(mode=="pink"){
+//     color="pink";
+// }
+// else if(mode=="red"){
+//     color="red";
+// }
+// else if(mode=="yellow"){
+//     color="yellow";
+// }else{
+//     color= "white";
+// }
+// console.log(color);
+// ternary operator
+// let age=19;
+//  let result = age>18?"adult":"not adult";
+//  console.log(result);
+// practical work
+// let num = prompt ("entre a number");
+// if(num%5==0 ){
+//     console.log(num ,"number is multiple of 5");
+ 
+// }else{
+//     console.log( num, "number is not a multiple of 5")
+// }
+// let score=96;
+// let grade;
+// if(score>=90 && score <=100){
+//     grade="A"  
+// }
+// else if(score>=70 && score <=80){
+//     grade="B" 
+// }
+// else if(score>=60 && score <=70){
+//     grade="C"
+// }
+// else if(score>=50 && score <=40){
+//     grade="D" 
+// }else{
+//     grade="F" 
+// }
+// console.log("your grade is " , grade)
+// chapter 3 (loops and string) for loop
+for(let i=1; i<=10; i++){
+    // console.log("somi batool... I am front end developer ");
+    document.getElementsByName(i);
 }
-else if(mode=="red"){
-    color="red";
-}
-else if(mode=="yellow"){
-    color="yellow";
-}else{
-    color= "white";
-}
-console.log(color);
+
 
 
