@@ -219,15 +219,55 @@
 // for(let indx=0; indx < marks.length; indx++){
 //     console.log(marks[indx]);
 // }
-let marks=[85 ,97, 44, 37,76 , 60];
-let sum =0;
-for(let val  of marks){
-    sum =sum +val;
-   
+// let marks=[85 ,97, 44, 37,76 , 60];
+// let sum =0;
+// for(let val  of marks){
+//     sum =sum +val;  
+// }
+// console.log(sum)
+// let avg = sum/marks.length;
+// console.log(avg);
+
+// let items = [250, 645, 300,900,50];
+// for(let i=0; i < items.length; i++){
+//    let offer= items[i]/10;
+//    items[i]= items[i]-offer;
+// }
+// console.log(items);
+// let fruit =["apple", "banana","mango", "orange"];
+// console.log(fruit)
+// console.log(fruit.toString());
+// console.log(fruit);
+// let deltitem = fruit.pop();
+// console.log("delet item is ",deltitem)
+// concatanitaion
+// let boysnam =["zakir", "mehboob", "faizu"];
+// let girlsnam = ["fatima" , "basila" , "somi"];
+// let friends = boysnam.concat(girlsnam);
+// console.log(friends);
+//  boysnam.shift("somi");
+// console.log(all);
+// let marks =[10, 20, 30 ,40 ,50];
+// console.log(marks);
+// marks.splice(2 , 3 , 29,32,12);
+// console.log(change)
+
+
+
+// let comp = ["shedev" , "texhozid" , "pinetechnologies" , "ibex" , "google"];
+// comp.shift();
+// comp.splice(2,1 , "ola");
+// comp.push("amzon");
+
+// function
+function myFunction(){
+    console.log("hello !! its me somi batool");
+    console.log("I am learning JS");
 }
-console.log(sum)
-let avg = sum/marks.length;
-console.log(avg);
+myFunction();
+
+
+
 
 
 
