@@ -260,12 +260,27 @@
 // comp.push("amzon");
 
 // function
-function myFunction(){
-    console.log("hello !! its me somi batool");
-    console.log("I am learning JS");
-}
-myFunction();
+// function myFunction(){
+//     console.log("hello !! its me somi batool");
+//     console.log("I am learning JS");
+// }
+// myFunction();
+// function sum(a , b){
+//     sum = a+b;
+//     console.log("sum of ", a , "and" , b , "=", sum);
 
+// }
+// sum(23 , 12);
+
+function countvowels(str){
+    let count =0;
+    for (const char of str){
+        if( char==="a" && char==="e"  && char==="i"  && char==="o"  && char==="u"){
+            count ++;
+        }
+    }
+    console.log(count);
+}
 
 
 
