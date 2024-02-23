@@ -272,15 +272,63 @@
 // }
 // sum(23 , 12);
 
-function countvowels(str){
-    let count =0;
-    for (const char of str){
-        if( char==="a" && char==="e"  && char==="i"  && char==="o"  && char==="u"){
-            count ++;
-        }
-    }
-    console.log(count);
-}
+// function countvowels(str){
+//     let count =0;
+//     for (const char of str){
+//         if( char=="a" && char=="e"  && char=="i"  && char=="o"  && char=="u"){
+//             count ++;
+//         }
+//     }
+//     console.log(count);
+// }
+// let arry = ["gilgit" ,"hunza"];
+// arry.forEach((val) =>{
+//     console.log(val.toUpperCase());
+// }
+// )
+    // let nums = [1, 2, 3, 4, 5, 6];
+    // nums.forEach((num)=>{
+    //     console.log(num*num);
+    // })
+// let sums =[34];
+// sums.forEach((sum)=>{
+//     console.log(sum+sum)
+// })
+// let arr =[1,2,3,4,5,6,7,8,9,10,12,13,14,15];
+// let evenarr = arr.filter((val)=>{
+//    return  val % 2!==0;
+// });
+// console.log(evenarr);
+// reduce
+// let arr =[4,6,7];
+// let output = arr.reduce((res , curr)=>{
+//    return res<curr ? res :curr;
+// });
+// console.log(output);
+// let marks = [50, 96, 91, 40,99];
+//  let topper= marks.filter((pre)=>{
+//    return pre>90
+
+// });
+// console.log(topper);
+// let n = prompt("Entre the vales");
+// let arr =[];
+// for(let j=1; j<=n ; j++)
+// {
+//     arr[j-1]=j;
+// }
+// console.log(arr);
+
+// let res= arr.reduce((pre, curr)=>{
+//  return pre+curr;
+// });
+// console.log(res);
+// let mul = arr.reduce((pre, curr)=>{
+//     return pre*curr;
+//    });
+//    console.log(mul);
+
+
 
 
 
