@@ -337,8 +337,119 @@
 //     indx++;
 // }
 
-let btn = document.querySelector('#btn');
-btn
+// let btn = document.querySelector('#btn');
+// btn.onclick =()=>{
+//     console.log("btn was clicked");
+//     let a=37;
+//     a++;
+//     console.log(a);
+
+// };
+// let box1 =document.querySelector('#box1');
+// box1.onmouseover =(evt)=>{
+//     console.log(evt);
+//     console.log(evt.type);
+//     console.log(evt.target);
+//     console.log(evt.clientX, evt.clientY );
+// };
+// box1.addEventListener("click" , ()=>{
+//     console.log("button 1 was clicked")  
+// });
+// box1.addEventListener("click" , ()=>{
+//     console.log("button 2 was clicked")  
+// });
+
+// const handler3 = () =>{
+//     // console.log("button 3 was clicked - handlers");
+// };
+
+// box1.addEventListener("click" , handler3 , ()=>{
+//     console.log("button 3 handlers are clicked")
+// }
+// );
+
+
+// box1.addEventListener("click" , ()=>{
+//     console.log("button 4 was clicked")  
+// });
+// box1.removeEventListener("click", handler3);
+// toggle menu button
+// let moodbutn = document.querySelector('#mood');
+// let currmood='light';
+// moodbutn.addEventListener("click" , ()=>{
+//     if(currmood==="light"){
+//         currmood="dark";
+//         document.querySelector("body").style.backgroundColor="black";
+//     }else{
+//         currmood="light";
+//         document.querySelector("body").style.backgroundColor="white";
+
+//     }
+//     console.log(currmood);
+  
+// });
+let userscore=0;
+let compscore=0;
+const  userscorepara = document.querySelector("#user-score");
+const  compscorepara = document.querySelector("#comp-score");
+const choices=document.querySelectorAll(".choic");
+const msg=document.querySelector("#msg");
+const gencompchoice=()=>{
+    const option = ["rock" , "paper" ,"scissor"];
+  const randIdx =  Math.floor(Math.random()*3);
+  return option [ randIdx];
+
+}
+const drawgame=()=>{
+   
+    msg.innerText="Game Was Draw. Play again!!";
+    msg.style.backgroundColor="#081b31";
+}
+const showWinner=(userwin , userchoice, compchoice)=>{
+    if(userwin){
+        userscore++;
+        userscorepara.innerText=userscore;
+        // console.log("you win!!");
+        msg.innerText=`You win!. ${userchoice} beats  ${compchoice}`;
+        msg.style.backgroundColor="green";
+    }else{
+        compscore++;
+        compscorepara.innerText=compscore;
+
+        msg.innerText=  `You Lose!. ${compchoice} beats your ${userchoice}`;
+        msg.style.backgroundColor="red";
+    }
+
+}
+const playgame =(userchoice)=>{
+    // console.log("user choice =" , userchoice);
+    const compchoice=gencompchoice();
+    // console.log("comp choice =", compchoice);
+    if(userchoice===compchoice){
+        // draw game
+        drawgame();
+    }else{
+        let userwin=true;
+        if(userchoice==="rock"){
+            userwin = compchoice==="paper"?false:true;
+        }else if(userchoice==="paper"){
+           userwin= compchoice==="scissor"?false:true;
+        }else{
+            userwin= compchoice==="rock"?false:true;
+
+        }
+        showWinner(userwin, userchoice,compchoice);
+    }
+
+};
+choices.forEach((choic)=>{
+   
+    choic.addEventListener("click",()=>{
+        const userchoice=choic.getAttribute("id");
+      
+        playgame(userchoice)
+    });
+});
 
 
 
